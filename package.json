@@ -10,6 +10,8 @@
     "testcafe": "^1.9.1"
   },
   "scripts": {
-    "demo-test": "testcafe chrome tests/demo-test.js"
+    "demo-test-one": "testcafe chrome tests/demo-test-one.js",
+    "demo-test-two": "testcafe chrome tests/demo-test-two.js",
+    "test-all": "testcafe chrome tests/*.js"
   }
 }
