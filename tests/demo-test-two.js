@@ -11,5 +11,7 @@ fixture `Phptravels test`
 
 test('Test logout button visibility', async t => {
     await t
-        .expect(logoutbutton.exists).ok();
+        .expect(logoutbutton.exists).ok()
+        .useRole(user)
+        .navigateTo('dfdfgdfgd')
 });

@@ -7,11 +7,14 @@
     "url": "git@github.com:ZeniStiks/testcafe-workshop.git"
   },
   "dependencies": {
-    "testcafe": "^1.9.1"
+    "testcafe": "^1.9.1",
+    "testcafe-reporter-html": "^1.4.6"
   },
   "scripts": {
-    "demo-test-one": "testcafe chrome tests/demo-test-one.js",
+    "runner": "node adomas-runner.js",
+    "demo-test-one": "testcafe chrome tests/demo-test-one.js --skip-js-errors",
     "demo-test-two": "testcafe chrome tests/demo-test-two.js",
+    "demo-test-remote": "testcafe remote tests/demo-test-one.js --qr-code",
     "test-all": "testcafe chrome tests/*.js"
   }
 }
